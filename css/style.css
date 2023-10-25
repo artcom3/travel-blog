@@ -1,0 +1,41 @@
+:root {
+  --color1: #5D7CA6;
+  --color2: #023059;
+  --color3: #023059;
+  --color4: #F2CAA7;
+  --color5: #59362E;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color4);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  padding: 10px;
+}
+
