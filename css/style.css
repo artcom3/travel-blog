@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&display=swap');
+
 :root {
   --color1: #5D7CA6;
   --color2: #023059;
@@ -6,8 +8,16 @@
   --color5: #59362E;
 }
 
-h5, h4, h3, h2, h1, p, a {
-  font-family: sans-serif;
+h5, h4, h3, h2, h1{
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p, a {
+  font-family: 'Lato', sans-serif;
 }
 
 * {
@@ -45,20 +55,22 @@ nav ul {
   align-items: center;
 }
 
-nav li {
-  padding: 10px 20px;
-}
-
 nav a {
   text-decoration: none;
   font-size: 1.3em;
   color: black;
+  padding: 10px 20px;
+}
+
+
+nav a.active {
+  text-decoration: underline;
 }
 
 nav a:hover {
   background-color: #59362E;
   color: white;
-
+  text-decoration: none;  
 }
 
 .header {
@@ -91,70 +103,35 @@ nav a:hover {
 .title-section {
   padding: 40px 80px 40px 40px;
 }
-#myHeader{
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 20px;
-}
-.title{
-  font-family: Georgia;
-}
-.content{
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-.image-and-text-container:first-child img {
-  max-width: 45%;
-  
-}
-.image-and-text-container:first-child .text h3 {
-font-family: Georgia, 'Times New Roman', Times, serif ;
-padding: 100px;
-margin: 0;
-line-height: 0.1;
 
-}
-.image-and-text-container:first-child .text p {
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-padding: 100px;
-margin: 0;
 
-}
-.image-and-text-container {
-  display: flex;
-  flex-wrap: nowrap; 
-  
-}
-.image-and-text{
-  display: flex;
-  flex-direction: row; /* Place image and text in a row layout */
-  align-items: center;  /* Vertically center image and text */
-  max-width: 45%; /* Limit the width of each image-and-text container */
-  padding: 5px; /* Add spacing between the pairs */
-}
-.image-and-text img {
-  max-width: 100%; 
-}
-.image-and-text .text {
-  flex: 1;
-  padding: 10px; /* Add spacing between the image and text */
-  font-family: 'Times New Roman', Times, serif;
-  
+.content {
+  max-width: min(100%,62.5em);
+  margin: 5em auto;
 }
 
-.image-and-text .text h3 { /*title*/
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 100px;
-  
+.content img {
+  max-width: 50%;
+  display: block;
+  margin: 40px auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.image-and-text .text p {
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  padding: 40px; 
-  white-space: nowrap;
-  
+.content h2 {
+  text-align: center;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--color5);
+  color: white;
+  padding: 1px;
+}
+
+footer p {
+  text-align: center;
 }
