@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap');
 
 :root {
   --color1: #5D7CA6;
@@ -119,6 +119,13 @@ nav a:hover {
 
 .content h2 {
   text-align: center;
+  background-color: var(--color5);
+  padding: 10px;
+  color: white;
+}
+
+.content p {
+  font-size: 1.2em;
 }
 
 article {
